@@ -12,34 +12,61 @@
     </div>
 
     <div class="contactManager">
-      <button class="btn">View Contact</button>
-      <button class="btn">Add New Contact</button>
+      <button class="viewList">View Contact</button>
+      <button class="newContact">Add New Contact</button>
     </div>
 
-    <div class="contacts">
-      <ul>
-        <li>Kenechukwu <button>View</button> <button>Delete</button></li>
-        <li>Oyin <button>View</button> <button>Delete</button></li>
-        <li>Yusuf <button>View</button> <button>Delete</button></li>
-      </ul>
-      <div class="contactDetails" id="kene">
-        <h3>Kenechukwu Obi</h3>
-        <h3>Email: 000</h3>
-        <h3>Phone Number: 000</h3>
-      </div>
+    <section class="sectionOne">
+      <div class="contacts">
+        <ul class="nameList">
+          <li class="name">
+            Kenechukwu
+            <div class="btnContainer">
+              <button class="viewContact">View</button>
+              <button>Delete</button>
+            </div>
+          </li>
 
-      <div class="contactDetails" id="oyin">
-        <h3>Name: Ekundayo Oyin</h3>
-        <h3>Email: 000</h3>
-        <h3>Phone Number: 000</h3>
-      </div>
+          <div class="contactDetails hidden" id="kene">
+            <h3>Kenechukwu Obi</h3>
+            <h3>Email: 000</h3>
+            <h3>Phone Number: 000</h3>
+          </div>
 
-      <div class="contactDetails" id="yusuf">
-        <h3>Name: Ahmed Yusuf</h3>
-        <h3>Email: 000</h3>
-        <h3>Phone Number: 000</h3>
-      </div>
+          <!-------------------------------------------------->
+          <li class="name hidden">
+            Oyin
+            <div class="btnContainer">
+              <button>View</button>
+              <button>Delete</button>
+            </div>
+          </li>
 
+          <div class="contactDetails hidden" id="oyin">
+            <h3>Ekundayo Oyin</h3>
+            <h3>Email: 000</h3>
+            <h3>Phone Number: 000</h3>
+          </div>
+          <!--------------------------------------->
+
+          <li class="name hidden">
+            Yusuf
+            <div class="btnContainer">
+              <button>View</button>
+              <button>Delete</button>
+            </div>
+          </li>
+
+          <div class="contactDetails hidden" id="yusuf">
+            <h3>Ahmed Yusuf</h3>
+            <h3>Email: 000</h3>
+            <h3>Phone Number: 000</h3>
+          </div>
+        </ul>
+      </div>
+    </section>
+
+    <section class="sectionTwo hidden">
       <div class="addNew">
         <form action="/submit-form" method="post">
           <label for="name">Name:</label><br />
@@ -54,6 +81,8 @@
           <input type="submit" value="Submit" />
         </form>
       </div>
-    </div>
+    </section>
+
+    <script src="script.js"></script>
   </body>
 </html>

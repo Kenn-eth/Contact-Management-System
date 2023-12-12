@@ -18,3 +18,25 @@ body {
   justify-content: space-evenly;
   align-items: center;
 }
+
+.nameList {
+  list-style: none;
+  padding: 5px;
+  margin: 3px;
+}
+
+.name {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.sectionTwo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.hidden {
+  display: none;
+}
