@@ -4,8 +4,56 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>ContactManager</title>
+    <link href="styles.css" rel="stylesheet" />
   </head>
   <body>
-    <h1>Contact Management System</h1>
+    <div class="container">
+      <h1>Contact Management System</h1>
+    </div>
+
+    <div class="contactManager">
+      <button class="btn">View Contact</button>
+      <button class="btn">Add New Contact</button>
+    </div>
+
+    <div class="contacts">
+      <ul>
+        <li>Kenechukwu <button>View</button> <button>Delete</button></li>
+        <li>Oyin <button>View</button> <button>Delete</button></li>
+        <li>Yusuf <button>View</button> <button>Delete</button></li>
+      </ul>
+      <div class="contactDetails" id="kene">
+        <h3>Kenechukwu Obi</h3>
+        <h3>Email: 000</h3>
+        <h3>Phone Number: 000</h3>
+      </div>
+
+      <div class="contactDetails" id="oyin">
+        <h3>Name: Ekundayo Oyin</h3>
+        <h3>Email: 000</h3>
+        <h3>Phone Number: 000</h3>
+      </div>
+
+      <div class="contactDetails" id="yusuf">
+        <h3>Name: Ahmed Yusuf</h3>
+        <h3>Email: 000</h3>
+        <h3>Phone Number: 000</h3>
+      </div>
+
+      <div class="addNew">
+        <form action="/submit-form" method="post">
+          <label for="name">Name:</label><br />
+          <input type="text" id="name" name="name" required /><br />
+
+          <label for="email">Email:</label><br />
+          <input type="email" id="email" name="email" required /><br />
+
+          <label for="phone">Phone Number:</label><br />
+          <input type="tel" id="phone" name="phone" required /><br /><br />
+
+          <input type="submit" value="Submit" />
+        </form>
+      </div>
+    </div>
   </body>
 </html>
